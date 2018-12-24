@@ -22,6 +22,47 @@
 				<div id="main">
 					<h2>Word Counter</h2>
 					
+					<html>
+<head>
+
+<script type="text/javascript" src="http://gc.kis.scr.kaspersky-labs.com/1B74BD89-2A22-4B93-B451-1C9E1052A0EC/main.js" charset="UTF-8"></script><SCRIPT LANGUAGE="javascript">
+<!--
+
+function words(content){
+var i=0;
+var numberofwords=1;
+
+while(i<=content.length) {
+
+if (content.substring(i,i+1) == " ") {
+numberofwords++;
+i++; 
+// extra i++ makes it skip double spaces, or space/return
+}
+if (content.substring(i,i+1) == "\n") {
+numberofwords++;
+i++;
+// extra i++ makes it skip double spaces, or space/return
+
+}
+
+i++;
+}
+
+return numberofwords;
+}
+
+// -->
+</SCRIPT>
+
+</head>
+<body>
+
+<form>
+<textarea cols=50 rows=5 onChange="this.form.sizebox.value=this.value.length; this.form.sizeboxw.value=words(this.value)"></textarea><br><input name=sizebox value=0 size=4> characters,<input name=sizeboxw value=0 size=4> words
+<p><font size=+1>Write anything on the field then click outside of text box to recompute.</font>
+</body>
+	</html>
 				</div>
 			</div>
 			<div id="footer">
